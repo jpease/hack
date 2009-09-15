@@ -1,10 +1,12 @@
-# Overview
+# Hack
+
+## Overview
 The basic purpose is to provide some simple automations based upon common Git workflows
 
-# Credits
+## Credits
 * Variation on ReinH's script for managing the git process as documented here: http://reinh.com/blog/2008/08/27/hack-and-and-ship.html
 
-# Usage
+## Usage
 
   $ hack on
 
