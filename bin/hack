@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require 'hack/hack'
+
+begin
+  hack_session = Hack.new(ARGV, STDIN)
+rescue
+  $stderr.print "Error: " + $!
+end
