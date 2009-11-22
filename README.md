@@ -8,29 +8,22 @@ The basic purpose is to provide some simple automations based upon common Git wo
 
 ## Usage
 
-  $ hack on
+  $ hack on [branch]
 
-  This will automatically switch to the default branch which you can easily 
-  configure. Alternatively you can use:
-
-  $ hack on foo
-
-  Where "foo" is the name of the specific branch you wish to use.  If the 
-  branch does not exist, it is created.  
+  Switch branches. If no branch is provided it will default to 'master'.  If the provided branch does not exist, it is created.
 
   $ hack sync
-  
+
   Rebases with the master.
-  
+
   $ hack push
-  
+
   Merge and pushes to your remote repository.
 
-  It also supports Rein's ssp (Simple Software Process) with:
+  $ hack sp
 
-  $ hack ssp
+  Shortcut for (s)ync and (p)ush.
 
-  Which is equivalent to hack sync && hack push.  If you prefer 
-  hack sync && rake && hack push, then you may use the -t flag for testing:
+  $ hack stp [test commands]
 
-  $ hack ssp -t
+  Run your test suite between the sync and push operations.  If no test commands are passed it will default to 'rake'
